@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/blogsearch-api/build/
+/blogsearch-api/build/classes/java/main/
+/blogsearch-api/build/classes/java/test/
+/blogsearch-client/build/
+/blogsearch-client/build/classes/java/main/
+/blogsearch-lib/build/
+/blogsearch-lib/build/classes/java/main/
+/build/

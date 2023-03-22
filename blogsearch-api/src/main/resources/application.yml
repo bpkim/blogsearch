@@ -1,0 +1,17 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+logging.level:
+  org.hibernate.SQL: debug
+service:
+  kakao:
+    url: https://dapi.kakao.com/v2
+    appkey: 4e75b900197e891107bcde200e7ce0ea
+  naver:
+    url: https://openapi.naver.com/v1
+    client-id: eIzBU0pZMCumoU12SHBF
+    client-secret: bClsLxfIeb

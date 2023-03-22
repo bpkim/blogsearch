@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
@@ -50,7 +49,8 @@ class SearchwordApiControllerTest {
 
         }
 
-        mockMvc.perform(get("/api/blog/searchword/rank"))
+        mockMvc.perform(get("/api/blog/searchword/rank")
+                        .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("meta").exists())
@@ -89,7 +89,8 @@ class SearchwordApiControllerTest {
 
         }
 
-        mockMvc.perform(get("/api/blog/searchword/rank/3"))
+        mockMvc.perform(get("/api/blog/searchword/rank/3")
+                        .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("meta").exists())

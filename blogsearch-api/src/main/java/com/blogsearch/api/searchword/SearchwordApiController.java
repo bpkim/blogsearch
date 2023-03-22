@@ -4,7 +4,7 @@ import com.blogsearch.lib.common.ApiResponse;
 import com.blogsearch.lib.searchword.model.dto.QuerySearchWordRankResDocumentDto;
 import com.blogsearch.lib.searchword.model.dto.QuerySearchWordRankResMedaDto;
 import com.blogsearch.lib.searchword.service.SearchwordService;
-import org.springframework.hateoas.MediaTypes;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import javax.validation.constraints.Min;
 import java.util.List;
 
 @Controller
-@RequestMapping(value ="/api/blog/searchword", produces = MediaTypes.HAL_JSON_VALUE)
+@RequestMapping(value ="/api/blog/searchword", produces = MediaType.APPLICATION_JSON_VALUE)
 public class SearchwordApiController {
 
     private final SearchwordService searchService;

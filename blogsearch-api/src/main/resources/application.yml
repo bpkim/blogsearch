@@ -15,3 +15,8 @@ service:
     url: https://openapi.naver.com/v1
     client-id: eIzBU0pZMCumoU12SHBF
     client-secret: bClsLxfIeb
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true

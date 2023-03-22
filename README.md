@@ -11,7 +11,7 @@
 * JPA
 * gradle 7.6.1
 ## jar 파일 다운로드
-* [**다운로드**](https://drive.google.com/file/d/1tb8ivUkG-OyhMbfglbffO5psW2sqsS99/view?usp=sharing)
+* [**다운로드**](https://drive.google.com/file/d/1gcnA284-8O9ha6buHHRqlCoUinkb-IzR/view?usp=sharing)
 
 * **실행**
 ~~~shell
